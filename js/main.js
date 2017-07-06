@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', function(event) {
+
 var modal = document.querySelector('.modal');
 var signIn = document.querySelector('.signin');
 var close = document.querySelector('.close');
@@ -6,11 +8,12 @@ var submit = document.querySelector('.submit');
 // var error = document.querySelector('');
 //-------------------------------------------------------------------------------------
 // When the user presses the .signin button, fade in the modal window
-function displayModalWindow(click) {
+function showModalWindow(click) {
   modal.style.display = 'block';
+  console.log('click received');
 };
 
-signIn.addEventListener('click', displayModalWindow);
+signIn.addEventListener('click', showModalWindow);
 //-------------------------------------------------------------------------------------
 // When the user presses the .close button, fade out the modal window
 function hideModalWindow(click) {
@@ -24,3 +27,5 @@ close.addEventListener('click', hideModalWindow);
 
 //-------------------------------------------------------------------------------------
 // When the user puts their cursor in one of the input fields, remove the .error class
+
+};
