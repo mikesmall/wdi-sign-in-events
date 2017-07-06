@@ -42,16 +42,17 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
   // When the user puts their cursor in one of the input fields, remove the .error class
 
-  var inputs = document.querySelectorAll('input');
+  var inputFields = document.querySelectorAll('input');
 
   function removeError(click) {
     var user = document.getElementById('user');
-    user.className = null;
+    this.className = null;
     var password = document.getElementById('pass');
-    password.className = null;
+    this.className = null;
   };
 
-  inputs.addEventListener('click', removeError);
+  inputFields[0].addEventListener('click', removeError);
+  inputFields[1].addEventListener('click', removeError);
 
 
 
