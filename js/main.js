@@ -39,9 +39,9 @@ document.addEventListener('DOMContentLoaded', function(event) {
   // };
   function addError(click) {
     var u = document.getElementById("user");
-    u.className += "error";
+    u.className = "error";
     var p = document.getElementById("pass");
-    p.className += "error";
+    p.className = "error";
   };
 
   submit.addEventListener('click', addError);
@@ -49,6 +49,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
   //-------------------------------------------------------------------------------------
 
   // When the user puts their cursor in one of the input fields, remove the .error class
+
+
 
 
 
