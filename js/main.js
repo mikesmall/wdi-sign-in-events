@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   //-------------------------------------------------------------------------------------
 
   // When the user presses the .submit button, add an .error class to both input elements
+
   var error = document.querySelector('input.error');
   var idUser = document.querySelector('#user');
   var idPass = document.querySelector('#pass');
