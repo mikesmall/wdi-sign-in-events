@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
   var signIn = document.querySelector('.signin');
   var close = document.querySelector('.close');
   var submit = document.querySelector('.submit');
-  var error = document.querySelector('input.error');
 
   //-------------------------------------------------------------------------------------
 
@@ -29,8 +28,16 @@ document.addEventListener('DOMContentLoaded', function(event) {
   //-------------------------------------------------------------------------------------
 
   // When the user presses the .submit button, add an .error class to both input elements
+  var error = document.querySelector('input.error');
+  var idUser = document.querySelector('#user');
+  var idPass = document.querySelector('#pass');
 
-  
+  function addError(click) {
+    
+  };
+
+  submit.addEventListener('click', addError);
+
 
   //-------------------------------------------------------------------------------------
 
