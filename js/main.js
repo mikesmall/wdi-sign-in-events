@@ -29,12 +29,12 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
   // When the user presses the .submit button, add an .error class to both input elements
 
-  var error = document.querySelector('input.error');
-  var idUser = document.querySelector('#user');
-  var idPass = document.querySelector('#pass');
+  var inputs = document.querySelectorAll('input');
 
   function addError(click) {
-    
+    for (i = 0; i < inputs.length; i++) {
+      inputs.className = 'error';
+    };
   };
 
   submit.addEventListener('click', addError);
