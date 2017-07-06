@@ -31,14 +31,20 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
   var inputs = document.querySelectorAll('input');
 
+  // Crappy for-loop that didn't work:
+  // function addError(click) {
+  //   for (i = 0; i < inputs.length; i++) {
+  //     inputs.className = 'error';
+  //   };
+  // };
   function addError(click) {
-    for (i = 0; i < inputs.length; i++) {
-      inputs.className = 'error';
-    };
+    var u = document.getElementById("user");
+    u.className += "error";
+    var p = document.getElementById("pass");
+    p.className += "error";
   };
 
   submit.addEventListener('click', addError);
-
 
   //-------------------------------------------------------------------------------------
 
