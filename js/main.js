@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   var signIn = document.querySelector('.signin');
   var close = document.querySelector('.close');
   var submit = document.querySelector('.submit');
+  var inputs = document.querySelectorAll('input');
 
   //-------------------------------------------------------------------------------------
 
@@ -29,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
   // When the user presses the .submit button, add an .error class to both input elements
 
-  var inputs = document.querySelectorAll('input');
 
   // Crappy for-loop that didn't work:
   // function addError(click) {
@@ -50,6 +50,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
   // When the user puts their cursor in one of the input fields, remove the .error class
 
+  function removeError(click) {
+    var u = document.getElementById("user");
+    u.className = nil;
+    var p = document.getElementById("pass");
+    p.className = nil;
+  };
+
+  inputs.addEventListener('click', removeError);
 
 
 
